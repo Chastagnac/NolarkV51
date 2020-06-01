@@ -22,7 +22,7 @@ form, .content {
     padding : 5px 10px;
     font-size : 16px;
     border-radius: 5px;
-    
+
     border : 1px solid gray;
 }
 
@@ -304,9 +304,53 @@ ul li:hover {
 /*CSS DE SIMULATEUR*/
 
 #simulateur #salaire #form_contact {
+
+    margin-top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#simulateur #salaire #infos {
+    padding : 20px;
+    border-radius: 10px;
+}
+
+#simulateur #salaire #infos {
+    padding : 20px;
+    border-radius: 10px;
+}
+#formulaire #form_simulateur #recueilinfos{
+    margin-top: 20px;
+    margin-left: 250px;
+    width: 420px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#formulaire #form_simulateur #btn_annuler{
+    margin-top: 20px;
+    border-radius: 5px;
+    margin-left: 85%;
+}
+
+
+#simulateur #salaire #remuneration #btn_annuler{
+    width: 200px;
+    border-radius: 5px;
+    margin-top : 20px;
+}
+.log{
+   padding : 20px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
+}
+
+.inscription {
+    margin-top: 20px;
+    margin-left: 385px;
+    width: 190px;
+    border-radius: 5px;
 }
 
 
@@ -317,6 +361,7 @@ ul li:hover {
     height: 50px; /* Hauteur de l'article */
     margin-top : 50%;
     margin-right: 35%;
+    border-radius: 5px;
 }
 
 .connex{
@@ -324,12 +369,14 @@ ul li:hover {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
+    border-radius: 10px;
 }
 
 .validerconnexion{
     margin-top: 20px;
     margin-left: 385px;
     width: 190px;
+    border-radius: 5px;
 }
 
 
@@ -341,7 +388,7 @@ ul li:hover {
 }
 
 .formulaire{
-       padding : 20px;
+    padding : 20px;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
@@ -384,8 +431,8 @@ ul li:hover {
         transition: transform 0.5s ease;
     }
 
-    
-    
+
+
     nav ul li {
         display: list-item;
         padding: 10px 0;

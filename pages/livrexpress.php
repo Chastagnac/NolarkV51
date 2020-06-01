@@ -21,7 +21,6 @@ include('../includes/debut_page.php');
             include('../includes/header.html.inc.php');
             ?>
         <div class ="blur">
-            <h1><hr><center>Simulateur pour les transporteur</center><hr></h1>
         </div>
         <section id="formulaire">
             <h1>Simulateur de prime annuelle pour les chauffeurs de Livr'Express :</h1>

@@ -19,22 +19,26 @@ include('../includes/debut_page.php');
         <link rel="icon" href="../favicon.ico">
     </head>
     <body>
-       <?php
+        <?php
         include('../includes/header.html.inc.php');
+
         //Si l'utilisateur n'est ni connecté ni vient juste de créer son compte 
         //affiche le formulaire de création de compte
         if (!filter_input(INPUT_POST, 'pseudo', FILTER_SANITIZE_STRING) && !isset($_SESSION['pseudo'])) {
-            echo '<form method="post" action="inscription.php">
-	<fieldset>
-	<legend>Connexion</legend>
+           echo ' <h1 id = "teste">Connexion :</h1>
+            <img src = "../images/login-rounded-right.png" alt = "connexione">
+            <form method="post" action="inscription.php">
+                
+	<fieldset class="log">
+	<legend>Incription</legend>
 	<p>
 	<label for="pseudo">Pseudo :</label><input name="pseudo" type="text" id="pseudo" /><br />
 	<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
-        <label for="password">Confirmer le mot de passe :</label><input type="password" name="password2" id="password2" />
+        <label for="password"><br>Confirmer le mot de passe :</label><input type="password" name="password2" id="password2" />
 	</p>
 	</fieldset>
-	<p><input type="submit" value="S\'inscrire" /></p></form>
-	<a href="./inscription.php">Pas encore inscrit ?</a>
+	<p><input type="submit" value="S\'inscrire" class="inscription" /></p></form>
+	<a href="../index.php">Revenir à l\'accueil ?</a>
 	 
 	</div>';
         } else {
@@ -56,7 +60,7 @@ include('../includes/debut_page.php');
             } else {
                 $pseudo = filter_input(INPUT_POST, 'pseudo', FILTER_SANITIZE_STRING);
                 $password = filter_input(INPUT_POST, 'password', FILTER_SANITIZE_STRING);
-                 $db = new PDO('mysql:host=127.0.0.1;dbname=nolark', 'nolarkuser', 'nolarkpwd');
+                $db = new PDO('mysql:host=127.0.0.1;dbname=nolark', 'nolarkuser', 'nolarkpwd');
                 $query = $db->prepare("insert into utilisateur (login, password, niveau) values ('" . $pseudo . "','" . $password . "', 2)");
                 $query->execute();
                 $message = '<p>Création du compte réalisée avec succès</p>' . $pseudo
