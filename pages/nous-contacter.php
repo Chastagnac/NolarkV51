@@ -22,7 +22,7 @@ include('../includes/debut_page.php');
     </head>
     <body>
         <?php
-            include('../includes/header.html.inc.php');
+        include('../includes/header.html.inc.php');
         ?>
         <section id="carto">
             <h1>Nous localiser :</h1>
@@ -124,8 +124,7 @@ include('../includes/debut_page.php');
             </form>
         </section>
         <?php
-        include('../includes/Réseaux.php');
-            include('../includes/footer.inc.php');
+        include('../includes/footer.inc.php');
         ?>
     </body>
 </html>

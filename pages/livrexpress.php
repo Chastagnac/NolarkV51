@@ -48,7 +48,6 @@ include('../includes/debut_page.php');
             </form>
         </section>
            <?php         
-            include('../includes/Réseaux.php');
             include('../includes/footer.inc.php');
         ?>
     </body>

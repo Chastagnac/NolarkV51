@@ -266,46 +266,45 @@ footer a{
 
 
 ul li:nth-child(1){
-    background: #3b5999;
+    background: 	#FFA07A;
 }
 ul li:nth-child(2){
-    background: #55acee;
+    background: #FA8072;
 }
 ul li:nth-child(3){
-    background: #e4405f;
+    background: #E9967A;
 }
 ul li:nth-child(4){
-    background: #0077B5;
+    background: #F08080;
 }
 ul li:nth-child(5){
-    background: #A290CC;
+    background: #CD5C5C;
 }
 ul li:nth-child(6){
-    background: #E8CC5C;
+    background: #DC143C;
 }
 ul li:nth-child(7){
-    background: #E85C7E;
+    background: #FF0000;
 }
 
 ul li:nth-child(8){
-    background: #E575A7;
+    background: #B22222;
 }
 
 ul li:nth-child(9){
-    background: #D12C9A;
+    background: #8B0000;
 }
 
 ul li:hover {
+    transition-duration: 2s;
     transform: translateY(-8px);
-    box-shadow: 0 10px 10px rgba(255,255,255,.2);
 }
+
 
 /*CSS DE SIMULATEUR*/
 
 #simulateur #salaire #form_contact {
     width: 50%;
-    padding: 20px; /* Marges intérieures */
-
     margin-left: auto;
     margin-right: auto;
 }
@@ -316,19 +315,36 @@ ul li:hover {
     float : right;
     width: 400px; /*largeur*/
     height: 50px; /* Hauteur de l'article */
-    margin-top : 7%;
+    margin-top : 50%;
     margin-right: 35%;
 }
 
-#simulateur #salaire #form_contact #submit #btn_envoyer{
-    margin-right: 14px;
-    margin-top : 14px;
-    width: 20%;
+.connex{
+    padding : 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
+
+.validerconnexion{
+    margin-top: 20px;
+    margin-left: 385px;
+    width: 190px;
+}
+
+
+
 
 
 .hrefconnexion{
     size: 500px;
+}
+
+.formulaire{
+       padding : 20px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Smartphone */

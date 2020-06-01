@@ -19,18 +19,19 @@ include('../includes/debut_page.php');
         include('../includes/header.html.inc.php');
         ?>
         <h1 id="teste">Connexion :</h1>
+        <img src="../images/login-rounded-right.png" alt="connexione">
         <?php
 //Le cas ou l'utilisateur n'est pas encore connecté, on lui affiche donc le formulaire de connection
         if (!filter_input(INPUT_POST, 'pseudo', FILTER_SANITIZE_STRING) && !isset($_SESSION['pseudo'])) {
             echo '<form method="post" action="connexion.php">
-	<fieldset>
+	<fieldset class="connex">
 	<legend>Connexion</legend>
 	<p>
 	<label for="pseudo">Pseudo :</label><input name="pseudo" type="text" id="pseudo" /><br />
 	<label for="password">Mot de Passe :</label><input type="password" name="password" id="password" />
 	</p>
 	</fieldset>
-	<p><input type="submit" value="Connexion" /></p></form>
+	<p><input type="submit" value="Connexion" class="validerconnexion"/></p></form>
 	<a href="./inscription.php" class="hrefconnexion">Pas encore inscrit ?</a>
 	 
 	</div>';
@@ -67,7 +68,7 @@ include('../includes/debut_page.php');
 	    pendant votre identification.<br /> Le mot de passe ou le pseudo 
             entré n\'est pas correcte.</p><p>Cliquez <a href="./connexion.php">ici</a> 
 	    pour revenir à la page précédente
-	    <br /><br />Cliquez <a href="./index.php">ici</a> 
+	    <br /><br />Cliquez <a href="../index.php">ici</a> 
 	    pour revenir à la page d accueil</p>';
                 }
                 $query->CloseCursor();
@@ -75,7 +76,7 @@ include('../includes/debut_page.php');
             echo $message . '</div>';           
         }
          
-        include('../includes/Réseaux.php');
+
         include('../includes/footer.inc.php');
         ?>
     </body>

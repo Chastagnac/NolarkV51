@@ -22,7 +22,6 @@ include('../includes/debut_page.php');
         <?php
             include('../includes/header.html.inc.php');
             include('../includes/casques.inc.php');
-            include('../includes/Réseaux.php');
             include('../includes/footer.inc.php');
         ?>
     </body>

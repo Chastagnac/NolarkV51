@@ -17,10 +17,10 @@ $pages = array(
     'Cross' => $dirPages . 'cross.php',
     'Piste' => $dirPages . 'piste.php',
     'Enfants' => $dirPages . 'enfants.php',
-    'Contacter' => $dirPages . 'nous-contacter.php',
-    'Compte' => $dirPages . 'connexion.php',
+    'Contacter' => $dirPages . 'nous-contacter.php',    
     'Simulateur' => $dirPages . 'simulateur.php',
-    'Prime' => $dirPages . 'livrexpress.php'
+    'Prime' => $dirPages . 'livrexpress.php',
+    'Compte' => $dirPages . 'connexion.php'
 );
 ?>
 
@@ -53,9 +53,7 @@ $pages = array(
                 //Ajout également d'un lien vers le panier du client
                 //Affiche le nombre d'articles dans le panier
                
-            } else {
-                echo "\n", '<li><a href="', $dirPages . 'connexion.php', '">', 'Se connecter', '</a></li>';
-            }
+            } 
             ?>
         </ul>
     </nav>
