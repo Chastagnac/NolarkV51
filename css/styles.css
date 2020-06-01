@@ -101,7 +101,7 @@ nav ul li {
     display: flex; /* Ce conteneur est "flexible" */
     justify-content: center; /* Les éléments portés sont centrés à l'horizontal */
     list-style-type: none; /* Cette liste n'a pas de puce */
-    font-size: x-large; /* Le texte est grossi en XL */
+    font-size: large; /* Le texte est grossi en XL */
     flex-grow: 1; /* L'espace occupé est élargie */
 
 }
@@ -114,7 +114,7 @@ nav ul li a {
 
 }
 nav ul li:hover {
-    background-color:#E8CC5C; /* Couleur du fond au passage de la souris */
+    background-color:black; /* Couleur du fond au passage de la souris */
 }
 section {
     width: 916px; /* Les sections occupent 916px (taille de la bannière) */
@@ -368,6 +368,8 @@ ul li:hover {
         transition: transform 0.5s ease;
     }
 
+    
+    
     nav ul li {
         display: list-item;
         padding: 10px 0;

@@ -29,6 +29,7 @@ include('../includes/debut_page.php')
         ?>       
         <a href="./deconnexion.php"><img src="../images/btn_deco.png" alt="Bouton de déconnexion"></a>
         <?php
+        include('../includes/Réseaux.php');
         include('../includes/footer.inc.php');
         ?>
     </body>

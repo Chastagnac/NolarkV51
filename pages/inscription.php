@@ -64,6 +64,7 @@ include('../includes/debut_page.php');
             }
             echo $message;
         }
+        include('../includes/Réseaux.php');
         include('../includes/footer.inc.php');
         ?>
     </body>

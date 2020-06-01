@@ -58,5 +58,10 @@ include('../includes/debut_page.php');
                 </form>
             </article>
         </section>
+        
+        <?php 
+            include('../includes/Réseaux.php');
+            include('../includes/footer.inc.php');
+        ?>
     </body>
 </html>

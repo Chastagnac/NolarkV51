@@ -78,16 +78,9 @@ include('./includes/debut_page.php')
             <article id="droite"><a href="pages/piste.php">Piste</a></article>
         </section>
 
-        <div class="wrapper">
-            <ul>
-                <li><a href="https://www.facebook.com/leo.chastagnac.7"><i class="fab fa-facebook-f"></i></a></li>
-                <li><a href="https://twitter.com/mvrtkun/status/1250100826099638273"><i class="fab fa-twitter"></i></a></li>
-                <li><a href="https://www.instagram.com/"><i class="fab fa-instagram"></i></a></li>
-                <li><a href="https://www.linkedin.com/in/l%C3%A9o-chastagnac-87a522182/"><i class="fab fa-linkedin"></i></a></li>
-                <li><a href="https://www.twitch.tv/directory"><i class="fab fa-twitch"></i></a></li>
-            </ul>
-        </div>
+        
         <?php
+        include('./includes/Réseaux.php');
         include('./includes/footer.inc.php');
         ?>
     </body>

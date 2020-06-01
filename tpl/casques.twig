@@ -17,11 +17,7 @@
             <p class="modele">{{ casque.modele }}</p>
             <img src="../images/casques/ajout.jpg{{ casque.ajout_produits }}" alt="">
             {# Si le stock est supérieur ou égal à 10 on ne s'alarme pas #}
-            {% if casque.classement == 5 %}
-                <img class="classement classement0{{ casque.classement }}" src="../images/casques/etoiles.gif" alt="Classement {{ (casque.classement/10)|replace({'.': ","}) }} sur 5">
-            {% else %}
-                <img class="classement classement{{ casque.classement }}" src="../images/casques/etoiles.gif" alt="Classement {{ (casque.classement/10)|replace({'.': ","}) }} sur 5">
-            {% endif %}
+           
             <<article id="ajout"><a href="pages/route.html"></a></article>
 
 
